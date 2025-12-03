@@ -89,8 +89,8 @@ def split_data(data):
     print(f"Training set: {len(X_train)} samples")
     print(f"Testing set: {len(X_test)} samples")
 
-        # TODO: Return X_train, X_test, y_train, y_test
-        return X_train, X_test, y_train, y_test
+    # TODO: Return X_train, X_test, y_train, y_test
+    return X_train, X_test, y_train, y_test
 
 
 def train_model(X_train, y_train):
@@ -164,7 +164,7 @@ def visualize_results(X_train, y_train, X_test, y_test, predictions, model):
     # TODO: Create a figure with size (12, 6)
     plt.figure(figsize=(12,6))
     # TODO: Plot training data as blue scatter points with label 'Training Data'
-    plt.scatter(X_train, color='blue', alpha=0.5, label="Training Data')
+    plt.scatter(X_train, color='blue', alpha=0.5, label='Training Data')
     # TODO: Plot test data (actual) as green scatter points with label 'Test Data (Actual)'
     plt.scatter(X_test, y_test, color='green', alpha=0.7, label='Test Data (Actual)')
     # TODO: Plot predictions as red X markers with label 'Predictions'
